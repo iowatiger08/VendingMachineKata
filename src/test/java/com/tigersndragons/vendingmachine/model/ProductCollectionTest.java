@@ -17,6 +17,13 @@ public class ProductCollectionTest {
         productCollection = new ProductCollection();
         assertThat(productCollection.isEmpty(), is (Boolean.TRUE));
     }
+    @Test
+    public void ProductCollectionIsEmptySize(){
+        productCollection = new ProductCollection();
+        productCollection.addChips(2);
+        productCollection.removeChips(2);
+        assertThat(productCollection.isEmpty(), is (Boolean.TRUE));
+    }
 
     @Test(expected = IllegalArgumentException.class)
     public void ProductCollectionThrowsErrorWithNegativeChips(){

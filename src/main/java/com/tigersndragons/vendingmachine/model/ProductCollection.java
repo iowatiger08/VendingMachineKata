@@ -23,7 +23,8 @@ public class ProductCollection {
 //    }
 
     public boolean isEmpty() {
-        return mapOfProducts.isEmpty();
+        return mapOfProducts.isEmpty()
+                || size()==0;
     }
 
     public void addChips(int size) {
