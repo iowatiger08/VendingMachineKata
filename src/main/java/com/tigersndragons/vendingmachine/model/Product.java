@@ -1,7 +1,9 @@
 package com.tigersndragons.vendingmachine.model;
 
 /**
- * Created by user on 6/7/16.
+ * Created by tdillon-hansen on 6/7/16.
  */
-public interface Product {
+public abstract class Product {
+    public abstract int price();
+    public abstract String type();
 }
