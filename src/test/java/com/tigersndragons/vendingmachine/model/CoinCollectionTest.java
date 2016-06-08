@@ -119,4 +119,22 @@ public class CoinCollectionTest {
         coinCollection.removeQuarter(2);
         assertThat(coinCollection.isEmpty(), is (Boolean.TRUE));
     }
+    @Test(expected = IllegalArgumentException.class)
+    public void CoinCollectorRemovetoomanyDimesThrowsError(){
+        coinCollection = new CoinCollection();
+        coinCollection.addDime(2);
+        coinCollection.removeDime(3);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void CoinCollectorRemovetoomanyNickelThrowsError(){
+        coinCollection = new CoinCollection();
+        coinCollection.addNickel(2);
+        coinCollection.removeNickel(3);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void CoinCollectorRemovetoomanyQuartersThrowsError(){
+        coinCollection = new CoinCollection();
+        coinCollection.addQuarter(2);
+        coinCollection.removeQuarter(3);
+    }
 }

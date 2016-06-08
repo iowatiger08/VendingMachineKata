@@ -5,7 +5,7 @@ package com.tigersndragons.vendingmachine.model;
  */
 public class CoinFactory {
 /*
-    public Coin convert (Coin aCoin){
+    public Coin read (Coin aCoin){
         if (aCoin != null &&
         ){
 

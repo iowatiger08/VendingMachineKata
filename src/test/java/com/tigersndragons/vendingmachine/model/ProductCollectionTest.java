@@ -55,6 +55,25 @@ public class ProductCollectionTest {
         productCollection = new ProductCollection();
         productCollection     .removeCandy(-1);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void ProductCollectionThrowsErrorWithToomuchChipsRemove(){
+        productCollection = new ProductCollection();
+        productCollection.addChips(2);
+        productCollection.removeChips(3);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void ProductCollectionThrowsErrorWithtoomuchColaRemove(){
+        productCollection = new ProductCollection();
+        productCollection.addCola(2);
+        productCollection     .removeCola(3);
+    }
+    @Test(expected = IllegalArgumentException.class)
+    public void ProductCollectionThrowsErrorWithtoomanyCandyRemove(){
+        productCollection = new ProductCollection();
+        productCollection.addCandy(2);
+        productCollection     .removeCandy(3);
+    }
     private ProductCollection fillCollection(int size, String type){
 
         productCollection = new ProductCollection();

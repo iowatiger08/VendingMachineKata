@@ -29,5 +29,6 @@ public class ProductServiceTest {
         assertThat(productService.getProducts(), instanceOf( ProductCollection.class) );
     }
 
+    
 
 }
