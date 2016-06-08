@@ -7,6 +7,7 @@ import com.tigersndragons.vendingmachine.model.ProductCollection;
  */
 public class ProductService {
     public ProductCollection getProducts() {
-        return null;
+        ProductCollection productCollection = new ProductCollection();
+        return productCollection;
     }
 }

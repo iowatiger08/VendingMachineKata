@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e874895-82e8-4949-88cc-c7826c8d66de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/ModelValues.class" afterPath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/ModelValues.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/Product.class" afterPath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/Product.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/ProductCollection.class" afterPath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/ProductCollection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Product.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VendingMachine.iml" afterPath="$PROJECT_DIR$/VendingMachine.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" />
     </list>
     <ignored path="VendingMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +32,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChipsTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ChipsTest.java">
+      <file leaf-file-name="ProductCollectionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="317">
+              <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,65 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chips.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Chips.java">
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="16" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Candy.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Candy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cola.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Cola.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColaTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ColaTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#469#470#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CandyTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CandyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="7" selection-start-line="12" selection-start-column="0" selection-end-line="27" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelValues.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="150">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -142,7 +110,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/VendingControllerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductFactoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductServiceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/Penny.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Coin.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Quarter.java" />
@@ -152,15 +119,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Dime.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Penny.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Nickel.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/QuarterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinReciever.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ChipsProduct.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Product.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ChipsTest.java" />
@@ -170,6 +134,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Candy.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Cola.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ColaTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java" />
       </list>
     </option>
   </component>
@@ -186,8 +154,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1497" />
-    <option name="y" value="142" />
+    <option name="x" value="5" />
+    <option name="y" value="41" />
     <option name="width" value="1214" />
     <option name="height" value="718" />
   </component>
@@ -792,12 +760,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CoinRecieverTest - 2016.06.08 at 10h 47m 19s.xml">
-      <configuration name="CoinRecieverTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 10h 50m 45s.xml">
-      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 10h 55m 27s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
@@ -816,10 +778,22 @@
     <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 11h 54m 53s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 13h 02m 54s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 16h 15m 25s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 16h 19m 52s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 16h 25m 44s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1497" y="142" width="1214" height="718" extended-state="0" />
-    <editor active="false" />
+    <frame x="5" y="41" width="1214" height="718" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -833,7 +807,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25947282" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25947282" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -871,9 +845,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +853,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="16" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#270#271#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -889,7 +866,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#281#282#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -897,7 +879,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#277#278#0" expanded="false" />
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -905,7 +892,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -921,9 +912,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -931,7 +920,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="16" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#270#271#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -939,7 +933,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#281#282#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,7 +946,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#277#278#0" expanded="false" />
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -955,7 +959,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -964,13 +972,6 @@
         <state relative-caret-position="375">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1086,39 +1087,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ChipsProduct.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1141,7 +1114,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="16" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#270#271#0" expanded="false" />
+            <element signature="e#298#299#0" expanded="false" />
+            <element signature="e#340#341#0" expanded="false" />
+            <element signature="e#367#368#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1149,7 +1127,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#281#282#0" expanded="false" />
+            <element signature="e#309#310#0" expanded="false" />
+            <element signature="e#351#352#0" expanded="false" />
+            <element signature="e#378#379#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1157,7 +1140,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
+          <folding>
+            <element signature="e#277#278#0" expanded="false" />
+            <element signature="e#305#306#0" expanded="false" />
+            <element signature="e#347#348#0" expanded="false" />
+            <element signature="e#374#375#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,9 +1153,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1175,19 +1161,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="15" column="7" selection-start-line="12" selection-start-column="0" selection-end-line="27" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ColaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="48" selection-start-line="0" selection-start-column="48" selection-end-line="0" selection-end-column="48" />
+        <state relative-caret-position="107">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding>
+            <marker date="1465404842000" expanded="true" signature="182:229" ph="/**...*/" />
+            <marker date="1465404842000" expanded="true" signature="399:409" ph=" { " />
+            <marker date="1465404842000" expanded="true" signature="512:580" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="75" column="37" selection-start-line="75" selection-start-column="37" selection-end-line="75" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#469#470#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>

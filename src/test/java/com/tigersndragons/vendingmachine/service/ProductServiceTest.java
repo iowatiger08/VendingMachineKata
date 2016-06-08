@@ -6,6 +6,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertThat;
+
+import static org.hamcrest.CoreMatchers.*;
+
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.isA;
 
@@ -22,7 +25,9 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void testProductFactoryReturnsProductCollection(){
-//        assertThat(productService.getProducts(), isA( ProductCollection.class) );
+    public void testProductServiceReturnsProductCollection(){
+        assertThat(productService.getProducts(), instanceOf( ProductCollection.class) );
     }
+
+
 }
