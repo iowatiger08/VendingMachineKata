@@ -38,25 +38,30 @@ public class CoinRecieverTest {
     @Test(expected=IllegalArgumentException.class)
     public void TestCoinAnalyzerRejectsPenny(){
         Penny aPenny = new Penny();
-        coinReciever.recieve(aPenny.weight(),aPenny.size());
+        coinReciever.recieve(aPenny);
     }
 
     @Test
     public void TestCoinAnalyzerAcceptsQuarter(){
         Quarter aCoin = new Quarter();
-        assertThat (coinReciever.recieve(aCoin.weight(),aCoin.size()).type(), is(aCoin.type()));
+        assertThat (coinReciever.recieve(aCoin).type(), is(aCoin.type()));
     }
 
     @Test
     public void TestCoinAnalyzerAcceptsDime(){
         Dime aCoin = new Dime();
-        assertThat (coinReciever.recieve(aCoin.weight(),aCoin.size()).type(), is(aCoin.type()));
+        assertThat (coinReciever.recieve(aCoin).type(), is(aCoin.type()));
     }
 
     @Test
     public void TestCoinAnalyzerAcceptsNickel(){
 
         Nickel aNickel = new Nickel();
-        assertThat (coinReciever.recieve(aNickel.weight(),aNickel.size()).type(), is(aNickel.type()));
+        assertThat (coinReciever.recieve(aNickel).type(), is(aNickel.type()));
+    }
+
+    @Test
+    public void CoinRecieverPutsOneCoinEachInCollection(){
+
     }
 }

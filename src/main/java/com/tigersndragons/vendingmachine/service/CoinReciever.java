@@ -33,4 +33,8 @@ import com.tigersndragons.vendingmachine.model.*;
 
         return null;
     }
+
+    public Coin recieve (Coin aCoin){
+        return recieve(aCoin.weight(),aCoin.size());
+    }
 }

@@ -10,4 +10,13 @@ public class ProductService {
         ProductCollection productCollection = new ProductCollection();
         return productCollection;
     }
+
+    public void getCola() {
+    }
+
+    public void getBagOfChips() {
+    }
+
+    public void getCandy() {
+    }
 }
