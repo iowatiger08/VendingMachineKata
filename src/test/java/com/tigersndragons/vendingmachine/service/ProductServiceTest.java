@@ -1,8 +1,8 @@
 package com.tigersndragons.vendingmachine.service;
 
 import com.tigersndragons.vendingmachine.NotEnoughToPurhaseException;
+import com.tigersndragons.vendingmachine.model.Dime;
 import com.tigersndragons.vendingmachine.model.ProductCollection;
-import com.tigersndragons.vendingmachine.service.ProductService;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +11,6 @@ import static org.junit.Assert.assertThat;
 import static org.hamcrest.CoreMatchers.*;
 
 import static org.mockito.Matchers.any;
-import static org.mockito.Matchers.isA;
 
 /**
  * Created by tdillon-hansen on 6/7/16.
@@ -29,15 +28,21 @@ public class ProductServiceTest {
     public void testProductServiceReturnsProductCollection(){
         assertThat(productService.getProducts(), instanceOf( ProductCollection.class) );
     }
+    @Test
+    public void recieveCoinForPurchaseDime(){
+
+        productService.receiveCoinsForPurchase(new Dime());
+    }
 
     @Test
     public void ProductServiceGetsBagofChipsForChipPrice(){
+        productService.receiveCoinsForPurchase();
         /*
         Given coins = 5 dimes
         select chips
         and display thank you
          */
-        productService.getBagOfChips();
+        productService.processChips();//.equals("THANK YOU");
     }
     @Test
     public void ProductServiceGetsCandyForCandyPrice(){
@@ -45,7 +50,7 @@ public class ProductServiceTest {
         Given coins = 13 nickels
         user select candy
          */
-        productService.getCandy();
+        productService.processCandy();
     }
     @Test
     public void ProductServiceGetsColaForColaPrice(){
@@ -53,7 +58,7 @@ public class ProductServiceTest {
         Given coins = 3 Quarters, 5 nickels
         user select cola
          */
-        productService.getCola();
+        productService.processCola();
     }
 
     @Test(expected = NotEnoughToPurhaseException.class)
@@ -62,7 +67,7 @@ public class ProductServiceTest {
         Given coins = 4 dimes
         user select chips
          */
-        productService.getBagOfChips();
+        productService.processChips();
     }
     @Test(expected = NotEnoughToPurhaseException.class)
     public void ProductServiceGetsCandyForLessCandyPrice(){
@@ -70,7 +75,7 @@ public class ProductServiceTest {
         Given coins = 12 nickels
         user select candy
          */
-        productService.getCandy();
+        productService.processCandy();
     }
     @Test(expected = NotEnoughToPurhaseException.class)
     public void ProductServiceGetsColaForLessThanColaPrice(){
@@ -78,7 +83,7 @@ public class ProductServiceTest {
         Given coins = 2 Quarters, 5 nickels
         user select cola
          */
-        productService.getCola();
+        productService.processCola();
     }
 /*
 
@@ -93,7 +98,7 @@ public class ProductServiceTest {
         user select chips
         there are 5 bags of chips left in vending
          */
-        productService.getBagOfChips();
+        productService.processChips();
     }
     @Test
     public void ProductServiceGetsCandyForCandyPrice5Left(){
@@ -102,7 +107,7 @@ public class ProductServiceTest {
         user select candy
         there are 5 candy left in vending
          */
-        productService.getCandy();
+        productService.processCandy();
     }
     @Test
     public void ProductServiceGetsColaForColaPrice5Left(){
@@ -111,7 +116,7 @@ public class ProductServiceTest {
         user select cola
         there are 5 cola left in vending
          */
-        productService.getCola();
+        productService.processCola();
     }
     @Test
     public void ProductServiceGetsBagofChipsForChipPriceWithExtraChange(){
@@ -120,7 +125,7 @@ public class ProductServiceTest {
         user select chips
         and returns 1 dime
          */
-        productService.getBagOfChips();
+        productService.processChips();
     }
     @Test
     public void ProductServiceGetsCandyForCandyPriceWithExtraChange(){
@@ -129,7 +134,7 @@ public class ProductServiceTest {
         user select candy
         and returns 1 nickel
          */
-        productService.getCandy();
+        productService.processCandy();
     }
     @Test
     public void ProductServiceGetsColaForColaPriceWithExtraChange(){
@@ -138,6 +143,6 @@ public class ProductServiceTest {
         user select cola
         and returns 1 quarter
          */
-        productService.getCola();
+        productService.processCola();
     }
 }

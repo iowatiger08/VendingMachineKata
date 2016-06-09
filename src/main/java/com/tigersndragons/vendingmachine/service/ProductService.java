@@ -1,5 +1,6 @@
 package com.tigersndragons.vendingmachine.service;
 
+import com.tigersndragons.vendingmachine.model.Coin;
 import com.tigersndragons.vendingmachine.model.ProductCollection;
 
 /**
@@ -11,12 +12,16 @@ public class ProductService {
         return productCollection;
     }
 
-    public void getCola() {
+    public String receiveCoinsForPurchase(Coin aCoin){
+
     }
 
-    public void getBagOfChips() {
+    public void processCola() {
     }
 
-    public void getCandy() {
+    public void processChips() {
+    }
+
+    public void processCandy() {
     }
 }
