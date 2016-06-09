@@ -15,7 +15,6 @@ import static org.mockito.Matchers.isNull;
  */
 public class CoinRecieverTest {
 
-
     private CoinReciever coinReciever;
 
     @Before
@@ -63,5 +62,20 @@ public class CoinRecieverTest {
     @Test
     public void CoinRecieverPutsOneCoinEachInCollection(){
 
+    }
+
+    @Test
+    public void recieveCoinForPurchaseDime(){
+
+        coinReciever.receiveCoinsForPurchase(new Dime());
+        assertThat (coinReciever.coinCollectionForPurchaseValue(), is (10));
+    }
+
+    @Test
+    public void clearCoincollectionForPurchase(){
+        coinReciever.receiveCoinsForPurchase(new Quarter());
+        coinReciever.receiveCoinsForPurchase(new Nickel());
+        coinReciever.clearCoinCollectionForPurchase();
+        assertThat (coinReciever.coinCollectionForPurchaseValue(), is (0));
     }
 }
