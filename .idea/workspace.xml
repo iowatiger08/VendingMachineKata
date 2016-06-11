@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e874895-82e8-4949-88cc-c7826c8d66de" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/service/CoinReciever.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/service/ProductService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/tigersndragons/vendingmachine/service/CoinRecieverTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/tigersndragons/vendingmachine/service/ProductServiceTest.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinReciever.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinManagerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductManagerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/CoinCollection.class" afterPath="$PROJECT_DIR$/target/classes/com/tigersndragons/vendingmachine/model/CoinCollection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/tigersndragons/vendingmachine/model/CoinCollectionTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/tigersndragons/vendingmachine/model/CoinCollectionTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinReciever.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinReciever.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" afterPath="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java" />
     </list>
     <ignored path="VendingMachine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,39 +37,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CoinRecieverTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java">
+      <file leaf-file-name="CoinManagerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinManagerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="257">
+              <caret line="98" column="45" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductServiceTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java">
+      <file leaf-file-name="CoinManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="366">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+              <folding>
+                <element signature="e#2006#2007#0" expanded="true" />
+                <element signature="e#2049#2050#0" expanded="true" />
+                <element signature="e#2202#2203#0" expanded="true" />
+                <element signature="e#2259#2260#0" expanded="true" />
+                <element signature="e#2304#2305#0" expanded="true" />
+                <element signature="e#2354#2355#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1470">
+              <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java">
+      <file leaf-file-name="CoinCollectionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+            <state relative-caret-position="471">
+              <caret line="162" column="28" selection-start-line="162" selection-start-column="23" selection-end-line="162" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoinCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+              <folding>
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#1542#1543#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#3145#3146#0" expanded="true" />
+                <element signature="e#3201#3202#0" expanded="true" />
+                <element signature="e#3238#3239#0" expanded="true" />
+                <element signature="e#3292#3293#0" expanded="true" />
+                <element signature="e#3332#3333#0" expanded="true" />
+                <element signature="e#3389#3390#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#881#882#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#938#939#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#738#739#0" expanded="true" />
+                <element signature="e#772#773#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
+                <element signature="e#829#830#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,6 +127,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="302">
               <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductCollectionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -133,16 +197,21 @@
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/Cola.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ColaTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ProductCollection.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/NotEnoughToPurhaseException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/Configuration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinReciever.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductManagerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinManagerTest.java" />
       </list>
     </option>
   </component>
@@ -261,36 +330,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VendingMachine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="VendingMachine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendingmachine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -453,32 +492,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.com.tigersndragons.vendingmachine in VendingMachine">
-    <configuration default="false" name="CoinRecieverTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.tigersndragons.vendingmachine.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="VendingMachine" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.tigersndragons.vendingmachine.service" />
-      <option name="MAIN_CLASS_NAME" value="com.tigersndragons.vendingmachine.service.CoinRecieverTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="com.tigersndragons.vendingmachine in VendingMachine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -571,6 +584,32 @@
       <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ProductManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.tigersndragons.vendingmachine.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="VendingMachine" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.tigersndragons.vendingmachine.service" />
+      <option name="MAIN_CLASS_NAME" value="com.tigersndragons.vendingmachine.service.ProductManagerTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -818,19 +857,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.CoinRecieverTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine in VendingMachine" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProductCollectionTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CoinCollectionTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine.model in VendingMachine" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine in VendingMachine" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProductCollectionTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CoinCollectionTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine.model in VendingMachine" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ProductManagerTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine in VendingMachine" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine.model in VendingMachine" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CoinCollectionTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ProductCollectionTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CoinRecieverTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ProductManagerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.com.tigersndragons.vendingmachine.model in VendingMachine" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CoinCollectionTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ProductCollectionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -851,34 +890,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CoinCollectionTest - 2016.06.08 at 17h 17m 26s.xml">
-      <configuration name="CoinCollectionTest" configurationId="JUnit" />
+    <history-entry file="ProductServiceTest - 2016.06.11 at 15h 25m 22s.xml">
+      <configuration name="ProductServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CoinCollectionTest - 2016.06.08 at 17h 18m 07s.xml">
-      <configuration name="CoinCollectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoinCollectionTest - 2016.06.08 at 17h 20m 14s.xml">
-      <configuration name="CoinCollectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CoinCollectionTest - 2016.06.08 at 17h 21m 37s.xml">
-      <configuration name="CoinCollectionTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 17h 22m 31s.xml">
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 14h 49m 30s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 17h 31m 01s.xml">
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 14h 50m 05s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.08 at 18h 08m 30s.xml">
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 05m 03s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.09 at 15h 36m 55s.xml">
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 06m 03s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.09 at 18h 25m 31s.xml">
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 14m 05s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.09 at 18h 46m 30s.xml">
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 19m 07s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 38m 56s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 40m 07s.xml">
+      <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="com_tigersndragons_vendingmachine_in_VendingMachine - 2016.06.11 at 15h 41m 07s.xml">
       <configuration name="com.tigersndragons.vendingmachine in VendingMachine" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -899,6 +938,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25947282" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -909,7 +949,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973805" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1240,14 +1279,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/NotEnoughToPurhaseException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1261,7 +1292,7 @@
         <state relative-caret-position="135">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1274,43 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinReciever.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
-          <folding>
-            <element signature="e#1441#1442#0" expanded="true" />
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="137" column="40" selection-start-line="137" selection-start-column="40" selection-end-line="137" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinRecieverTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/ModelValues.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -1319,26 +1313,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/ProductCollectionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state relative-caret-position="360">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/model/CoinCollectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="162" column="28" selection-start-line="162" selection-start-column="23" selection-end-line="162" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/ProductManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#881#882#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#772#773#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/model/CoinCollection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+        <state relative-caret-position="486">
+          <caret line="127" column="15" selection-start-line="127" selection-start-column="15" selection-end-line="127" selection-end-column="15" />
+          <folding>
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
+            <element signature="e#3201#3202#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3292#3293#0" expanded="true" />
+            <element signature="e#3332#3333#0" expanded="true" />
+            <element signature="e#3389#3390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/ProductManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="115" column="5" selection-start-line="115" selection-start-column="5" selection-end-line="115" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/tigersndragons/vendingmachine/service/CoinManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+          <folding>
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2049#2050#0" expanded="true" />
+            <element signature="e#2202#2203#0" expanded="true" />
+            <element signature="e#2259#2260#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+            <element signature="e#2354#2355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/tigersndragons/vendingmachine/service/CoinManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="98" column="45" selection-start-line="98" selection-start-column="45" selection-end-line="98" selection-end-column="45" />
           <folding />
         </state>
       </provider>

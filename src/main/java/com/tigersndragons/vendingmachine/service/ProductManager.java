@@ -1,16 +1,16 @@
 package com.tigersndragons.vendingmachine.service;
 
-import com.tigersndragons.vendingmachine.model.Coin;
-import com.tigersndragons.vendingmachine.model.CoinCollection;
 import com.tigersndragons.vendingmachine.model.ProductCollection;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * Created by tdillon-hansen on 6/7/16.
  */
-public class ProductService {
+public class ProductManager {
+
     @Autowired
-    CoinReciever coinReciever;
+    CoinManager coinManager;
 
     public ProductCollection getProducts() {
         ProductCollection productCollection = new ProductCollection();

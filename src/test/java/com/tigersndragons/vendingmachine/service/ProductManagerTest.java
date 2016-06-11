@@ -1,7 +1,5 @@
 package com.tigersndragons.vendingmachine.service;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
-import com.tigersndragons.vendingmachine.NotEnoughToPurhaseException;
 import com.tigersndragons.vendingmachine.model.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,84 +16,84 @@ import static org.mockito.Mockito.when;
 /**
  * Created by tdillon-hansen on 6/7/16.
  */
-public class ProductServiceTest {
+public class ProductManagerTest {
 
-    private ProductService productService;
+    private ProductManager productManager;
 
     @InjectMocks
-    CoinReciever coinReciever;
+    CoinManager coinManager;
 
     @Before
     public void setUp(){
-        productService = new ProductService();
-        coinReciever = mock (CoinReciever.class);
+        productManager = new ProductManager();
+        coinManager = mock (CoinManager.class);
     }
 
     @Test
     public void testProductServiceReturnsProductCollection(){
-        assertThat(productService.getProducts(), instanceOf( ProductCollection.class) );
+        assertThat(productManager.getProducts(), instanceOf( ProductCollection.class) );
     }
 
 
     @Test
     public void ProductServiceGetsBagofChipsForChipPrice(){
 
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(50);
-       // coinReciever.receiveCoinsForPurchase(new Dime());
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(50);
+       // coinManager.receiveCoinsForPurchase(new Dime());
         /*
         Given coins = 5 dimes
         select chips
         and display thank you
          */
-        assertThat(productService.processChips(), is(ModelValues.THANKYOU));
+        assertThat(productManager.processChips(), is(ModelValues.THANKYOU));
     }
     @Test
     public void ProductServiceGetsCandyForCandyPrice(){
 
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(65);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(65);
         /*
         Given coins = 13 nickels
         user select candy
          */
-        assertThat( productService.processCandy(), is(ModelValues.THANKYOU));
+        assertThat( productManager.processCandy(), is(ModelValues.THANKYOU));
     }
     @Test
     public void ProductServiceGetsColaForColaPrice(){
 
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(100);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(100);
         /*
         Given coins = 3 Quarters, 5 nickels
         user select cola
          */
-        assertThat( productService.processCola(), is(ModelValues.THANKYOU));
+        assertThat( productManager.processCola(), is(ModelValues.THANKYOU));
     }
 
     @Test
     public void ProductServiceGetsBagofChipsForLessChipPrice(){
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(40);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(40);
         /*
         Given coins = 4 dimes
         user select chips
          */
-        assertThat( productService.processChips(), is (ModelValues.NOTENOUGH));
+        assertThat( productManager.processChips(), is (ModelValues.NOTENOUGH));
     }
     @Test
     public void ProductServiceGetsCandyForLessCandyPrice(){
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(60);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(60);
         /*
         Given coins = 12 nickels
         user select candy
          */
-        assertThat( productService.processCandy(), is (ModelValues.NOTENOUGH));
+        assertThat( productManager.processCandy(), is (ModelValues.NOTENOUGH));
     }
     @Test
     public void ProductServiceGetsColaForLessThanColaPrice(){
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(75);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(75);
         /*
         Given coins = 2 Quarters, 5 nickels
         user select cola
          */
-        assertThat( productService.processCola(), is (ModelValues.NOTENOUGH));
+        assertThat( productManager.processCola(), is (ModelValues.NOTENOUGH));
     }
 /*
 
@@ -106,15 +104,15 @@ public class ProductServiceTest {
     @Test
     public void ProductServiceGetsBagofChipsForChipPricewith5Left(){
 
-        when (coinReciever.coinCollectionForPurchaseValue()).thenReturn(75);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(75);
         getProductCollectionWith(6, ModelValues.CHIPS_TYPE);
         /*
         Given coins = 2 Quarters and 6 bags
         user select chips
         there are 5 bags of chips left in vending
          */
-        //assertThat(  productService.processChips(), is (ModelValues.THANKYOU));
-        assertThat( productService.getChipCount() , is (5));
+        //assertThat(  productManager.processChips(), is (ModelValues.THANKYOU));
+        assertThat( productManager.getChipCount() , is (5));
     }
 
     private ProductCollection getProductCollectionWith(int amount, String productType) {
@@ -130,8 +128,8 @@ public class ProductServiceTest {
         user select candy
         there are 5 candy left in vending
          */
-       // assertThat( productService.processCandy(), is (ModelValues.THANKYOU);
-        assertThat( productService.getCandyCount() , is (5));
+       // assertThat( productManager.processCandy(), is (ModelValues.THANKYOU);
+        assertThat( productManager.getCandyCount() , is (5));
     }
     @Test
     public void ProductServiceGetsColaForColaPrice5Left(){
@@ -140,8 +138,8 @@ public class ProductServiceTest {
         user select cola
         there are 5 cola left in vending
          */
-        //assertThat( productService.processCola() , is (ModelValues.THANKYOU);
-         assertThat( productService.getColaCount() , is (5));
+        //assertThat( productManager.processCola() , is (ModelValues.THANKYOU);
+         assertThat( productManager.getColaCount() , is (5));
     }
     @Test
     public void ProductServiceGetsBagofChipsForChipPriceWithExtraChange(){
@@ -150,7 +148,7 @@ public class ProductServiceTest {
         user select chips
         and returns 1 dime
          */
-        assertThat(  productService.processChips(), is (ModelValues.CHANGERETURNED) );
+        assertThat(  productManager.processChips(), is (ModelValues.CHANGERETURNED) );
     }
     @Test
     public void ProductServiceGetsCandyForCandyPriceWithExtraChange(){
@@ -159,7 +157,7 @@ public class ProductServiceTest {
         user select candy
         and returns 1 nickel
          */
-        assertThat( productService.processCandy(), is (ModelValues.CHANGERETURNED));
+        assertThat( productManager.processCandy(), is (ModelValues.CHANGERETURNED));
     }
     @Test
     public void ProductServiceGetsColaForColaPriceWithExtraChange(){
@@ -168,6 +166,6 @@ public class ProductServiceTest {
         user select cola
         and returns 1 quarter
          */
-        assertThat( productService.processCola(), is (ModelValues.CHANGERETURNED));
+        assertThat( productManager.processCola(), is (ModelValues.CHANGERETURNED));
     }
 }

@@ -24,6 +24,7 @@ public class CoinCollectionTest {
         coinCollection = new CoinCollection();
         coinCollection.addQuarter(2);
         assertThat(coinCollection.size(), is (2));
+        assertThat(coinCollection.getNumberOfQuarters(), is (2));
     }
     @Test
     public void CoinCollectorRemoveAQuarter(){
@@ -55,6 +56,7 @@ public class CoinCollectionTest {
         coinCollection = new CoinCollection();
         coinCollection.addDime(2);
         assertThat(coinCollection.size(), is (2));
+        assertThat(coinCollection.getNumberOfDimes(), is (2));
     }
     @Test(expected = IllegalArgumentException.class)
     public void CoinCollectorAddDimeNegativeThrowsError(){
@@ -65,6 +67,21 @@ public class CoinCollectionTest {
     public void CoinCollectorAddNickelNegativeThrowsError(){
         coinCollection = new CoinCollection();
         coinCollection.addNickel(-1);
+    }
+    @Test
+    public void CoinCollectionInitDimeSizeZero(){
+        coinCollection = new CoinCollection();
+        assertThat(coinCollection.getNumberOfDimes(), is (0));
+    }
+    @Test
+    public void CoinCollectionInitNickelSizeZero(){
+        coinCollection = new CoinCollection();
+        assertThat(coinCollection.getNumberOfNickels(), is (0));
+    }
+    @Test
+    public void CoinCollectionInitQuarterSizeZero(){
+        coinCollection = new CoinCollection();
+        assertThat(coinCollection.getNumberOfQuarters(), is (0));
     }
     @Test
     public void CoinCollectorAddDimeValue(){
@@ -89,8 +106,9 @@ public class CoinCollectionTest {
     @Test
     public void CoinCollectorAddNickel(){
         coinCollection = new CoinCollection();
-        coinCollection.addDime(2);
+        coinCollection.addNickel(2);
         assertThat(coinCollection.size(), is (2));
+        assertThat(coinCollection.getNumberOfNickels(), is (2));
     }
     @Test
     public void CoinCollectorAddNickelValue(){
@@ -136,5 +154,13 @@ public class CoinCollectionTest {
         coinCollection = new CoinCollection();
         coinCollection.addQuarter(2);
         coinCollection.removeQuarter(3);
+    }
+    @Test
+    public void CoinCollectionClearSizeIsZero(){
+        coinCollection = new CoinCollection();
+        coinCollection.addNickel(2);
+        coinCollection.addQuarter(5);
+        coinCollection.clear();
+        assertThat(coinCollection.size(), is (0));
     }
 }
