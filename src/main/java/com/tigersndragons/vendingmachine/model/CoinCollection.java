@@ -11,7 +11,7 @@ public class CoinCollection {
     private static final String NICKEL = "NICKEL";
     private static final String DIME = "DIME";
     private static final String QUARTER = "QUARTER";
-    Map<String, Integer> mapOfCoins;//= new HashMap<Coin, Integer>();
+    private Map<String, Integer> mapOfCoins;
 
     public CoinCollection() {
         init();

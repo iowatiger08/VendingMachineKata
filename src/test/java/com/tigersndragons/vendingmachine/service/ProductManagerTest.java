@@ -1,15 +1,15 @@
 package com.tigersndragons.vendingmachine.service;
 
-import com.tigersndragons.vendingmachine.model.*;
+import com.tigersndragons.vendingmachine.model.ModelValues;
+import com.tigersndragons.vendingmachine.model.ProductCollection;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
 
+import static com.tigersndragons.vendingmachine.model.ModelValues.CANDY_PRICE;
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-
-import static org.hamcrest.CoreMatchers.*;
-
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -25,8 +25,9 @@ public class ProductManagerTest {
 
     @Before
     public void setUp(){
-        productManager = new ProductManager();
         coinManager = mock (CoinManager.class);
+        productManager = new ProductManager();
+        productManager.setCoinManager(coinManager);
     }
 
     @Test
@@ -34,65 +35,92 @@ public class ProductManagerTest {
         assertThat(productManager.getProducts(), instanceOf( ProductCollection.class) );
     }
 
+    @Test
+    public void AddChipsToProductCollection(){
+        productManager.addToProductCollectionWith(2,ModelValues.CHIPS_TYPE);
+        assertThat(productManager.getChipCount(), is (2));
+    }
+    @Test
+    public void AddColaToProductCollection(){
+        productManager.addToProductCollectionWith(3,ModelValues.COLA_TYPE);
+        assertThat(productManager.getColaCount(), is (3));
+    }
+    @Test
+    public void AddCandyToProductCollection(){
+        productManager.addToProductCollectionWith(4,ModelValues.CANDY_TYPE);
+        assertThat(productManager.getCandyCount(), is (4));
+    }
+
+    @Test
+    public void ClearProductCollectionisZeroCount(){
+        productManager.addToProductCollectionWith(3,ModelValues.CANDY_TYPE);
+        productManager.addToProductCollectionWith(3,ModelValues.COLA_TYPE);
+        productManager.addToProductCollectionWith(3,ModelValues.CHIPS_TYPE);
+        productManager.clearProducts();
+        assertThat(productManager.getCandyCount(), is (0));
+        assertThat(productManager.getColaCount(), is (0));
+        assertThat(productManager.getChipCount(), is (0));
+    }
 
     @Test
     public void ProductServiceGetsBagofChipsForChipPrice(){
-
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(50);
-       // coinManager.receiveCoinsForPurchase(new Dime());
         /*
         Given coins = 5 dimes
         select chips
         and display thank you
          */
+        productManager.addToProductCollectionWith(1, ModelValues.CHIPS_TYPE);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(ModelValues.CHIPS_PRICE);
         assertThat(productManager.processChips(), is(ModelValues.THANKYOU));
     }
     @Test
     public void ProductServiceGetsCandyForCandyPrice(){
-
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(65);
         /*
         Given coins = 13 nickels
         user select candy
          */
+        productManager.addToProductCollectionWith(1, ModelValues.CANDY_TYPE);
+
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(CANDY_PRICE);
         assertThat( productManager.processCandy(), is(ModelValues.THANKYOU));
     }
     @Test
     public void ProductServiceGetsColaForColaPrice(){
-
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(100);
         /*
         Given coins = 3 Quarters, 5 nickels
         user select cola
          */
+        productManager.addToProductCollectionWith(6, ModelValues.COLA_TYPE);
+
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(ModelValues.COLA_PRICE);
         assertThat( productManager.processCola(), is(ModelValues.THANKYOU));
     }
 
     @Test
     public void ProductServiceGetsBagofChipsForLessChipPrice(){
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(40);
         /*
         Given coins = 4 dimes
         user select chips
          */
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(40);
         assertThat( productManager.processChips(), is (ModelValues.NOTENOUGH));
     }
     @Test
     public void ProductServiceGetsCandyForLessCandyPrice(){
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(60);
         /*
         Given coins = 12 nickels
         user select candy
          */
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(60);
         assertThat( productManager.processCandy(), is (ModelValues.NOTENOUGH));
     }
     @Test
     public void ProductServiceGetsColaForLessThanColaPrice(){
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(75);
         /*
         Given coins = 2 Quarters, 5 nickels
         user select cola
          */
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(75);
         assertThat( productManager.processCola(), is (ModelValues.NOTENOUGH));
     }
 /*
@@ -103,23 +131,18 @@ public class ProductManagerTest {
  */
     @Test
     public void ProductServiceGetsBagofChipsForChipPricewith5Left(){
-
-        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(75);
-        getProductCollectionWith(6, ModelValues.CHIPS_TYPE);
         /*
         Given coins = 2 Quarters and 6 bags
         user select chips
         there are 5 bags of chips left in vending
          */
-        //assertThat(  productManager.processChips(), is (ModelValues.THANKYOU));
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(ModelValues.CHIPS_PRICE);
+        productManager.addToProductCollectionWith(6, ModelValues.CHIPS_TYPE);
+        productManager.processChips();
         assertThat( productManager.getChipCount() , is (5));
     }
 
-    private ProductCollection getProductCollectionWith(int amount, String productType) {
 
-        ProductCollection productCollection = new ProductCollection();
-        return productCollection;
-    }
 
     @Test
     public void ProductServiceGetsCandyForCandyPrice5Left(){
@@ -128,26 +151,34 @@ public class ProductManagerTest {
         user select candy
         there are 5 candy left in vending
          */
-       // assertThat( productManager.processCandy(), is (ModelValues.THANKYOU);
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(CANDY_PRICE);
+        productManager.addToProductCollectionWith(6, ModelValues.CANDY_TYPE);
+        productManager.processCandy();
         assertThat( productManager.getCandyCount() , is (5));
     }
     @Test
     public void ProductServiceGetsColaForColaPrice5Left(){
+
         /*
         Given coins = 2 Quarters, 5 dimes and 6 cola
         user select cola
         there are 5 cola left in vending
          */
-        //assertThat( productManager.processCola() , is (ModelValues.THANKYOU);
-         assertThat( productManager.getColaCount() , is (5));
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(ModelValues.COLA_PRICE);
+        productManager.addToProductCollectionWith(6, ModelValues.COLA_TYPE);
+        productManager.processCola();
+        assertThat( productManager.getColaCount() , is (5));
     }
     @Test
     public void ProductServiceGetsBagofChipsForChipPriceWithExtraChange(){
+
         /*
         Given coins = 2 Quarters, 1 dimes
         user select chips
         and returns 1 dime
          */
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(ModelValues.CHIPS_PRICE+10);
+        productManager.addToProductCollectionWith(6, ModelValues.CHIPS_TYPE);
         assertThat(  productManager.processChips(), is (ModelValues.CHANGERETURNED) );
     }
     @Test
@@ -157,6 +188,8 @@ public class ProductManagerTest {
         user select candy
         and returns 1 nickel
          */
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(CANDY_PRICE+20);
+        productManager.addToProductCollectionWith(6, ModelValues.CANDY_TYPE);
         assertThat( productManager.processCandy(), is (ModelValues.CHANGERETURNED));
     }
     @Test
@@ -166,6 +199,8 @@ public class ProductManagerTest {
         user select cola
         and returns 1 quarter
          */
+        when (coinManager.coinCollectionForPurchaseValue()).thenReturn(ModelValues.COLA_PRICE+25);
+        productManager.addToProductCollectionWith(6, ModelValues.COLA_TYPE);
         assertThat( productManager.processCola(), is (ModelValues.CHANGERETURNED));
     }
 }

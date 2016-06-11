@@ -8,19 +8,18 @@ import java.util.Map;
  */
 public class ProductCollection {
 
-    private final Map<String, Integer> mapOfProducts;
+    private Map<String, Integer> mapOfProducts;
 
     public ProductCollection(){
-        mapOfProducts= new HashMap<>();
+        init();
     }
 
-    public Map<String, Integer> getMapOfProducts() {
-        return mapOfProducts;
+    private void init(){
+        mapOfProducts = new HashMap<>();
+        mapOfProducts.put(ModelValues.CHIPS_TYPE,0);
+        mapOfProducts.put(ModelValues.COLA_TYPE,0);
+        mapOfProducts.put(ModelValues.CANDY_TYPE,0);
     }
-
-//    public void setMapOfProducts(Map<String, Integer> mapOfProducts) {
-//        this.mapOfProducts = mapOfProducts;
-//    }
 
     public boolean isEmpty() {
         return mapOfProducts.isEmpty()
@@ -31,12 +30,11 @@ public class ProductCollection {
         if (size <=0 ){
             throw new IllegalArgumentException("cannot add none or negative values");
         }
-        if (mapOfProducts.get(ModelValues.CHIPS_TYPE)== null
-                || mapOfProducts.get(ModelValues.CHIPS_TYPE).intValue() ==0){
+        if (getChipsCount() ==0){
             mapOfProducts.put(ModelValues.CHIPS_TYPE, new Integer(size));
 
         }else {
-            Integer prevValue = mapOfProducts.get(ModelValues.CHIPS_TYPE);
+            Integer prevValue = getChipsCount();
             mapOfProducts.put(ModelValues.CHIPS_TYPE, prevValue + size);
             // java 8 mapOfProducts.compute(ModelValues.CHIPS_TYPE, ( ModelValues.CHIPS_TYPE, prevValue ) ->
             //        prevValue == null ? size : prevValue + size);
@@ -49,12 +47,11 @@ public class ProductCollection {
         if (size <=0 ){
             throw new IllegalArgumentException("cannot add none or negative values");
         }
-        if (mapOfProducts.get(ModelValues.COLA_TYPE)== null
-                || mapOfProducts.get(ModelValues.COLA_TYPE).intValue()==0){
+        if (getColaCount() ==0){
             mapOfProducts.put(ModelValues.COLA_TYPE, new Integer(size));
 
         }else {
-            Integer prevValue = mapOfProducts.get(ModelValues.COLA_TYPE);
+            Integer prevValue = getColaCount();
             mapOfProducts.put(ModelValues.COLA_TYPE, prevValue + size);
         }
     }
@@ -63,21 +60,17 @@ public class ProductCollection {
         if (size <=0 ){
             throw new IllegalArgumentException("cannot add none or negative values");
         }
-        if (mapOfProducts.get(ModelValues.CANDY_TYPE)== null
-                || mapOfProducts.get(ModelValues.CANDY_TYPE).intValue()==0){
+        if (getCandyCount()==0){
             mapOfProducts.put(ModelValues.CANDY_TYPE, new Integer(size));
 
         }else {
-            Integer prevValue = mapOfProducts.get(ModelValues.CANDY_TYPE);
+            Integer prevValue = getCandyCount();
             mapOfProducts.put(ModelValues.CANDY_TYPE, prevValue + size);
         }
     }
 
     public int size(){
-        int numOfCandy = mapOfProducts.get(ModelValues.CANDY_TYPE) ==null? 0:mapOfProducts.get(ModelValues.CANDY_TYPE);
-        int numOfCola = mapOfProducts.get(ModelValues.COLA_TYPE) ==null? 0:mapOfProducts.get(ModelValues.COLA_TYPE);
-        int numOfChips =mapOfProducts.get(ModelValues.CHIPS_TYPE) ==null? 0:mapOfProducts.get(ModelValues.CHIPS_TYPE);
-        return numOfCandy +numOfCola +numOfChips;
+        return getCandyCount() +getColaCount() +getChipsCount();
     }
 
 
@@ -85,14 +78,12 @@ public class ProductCollection {
         if (size <=0 ){
             throw new IllegalArgumentException("zero or negative values not allowed");
         }
-        if (mapOfProducts.get(ModelValues.CANDY_TYPE)== null
-                || mapOfProducts.get(ModelValues.CANDY_TYPE).intValue()==0
-                ||  mapOfProducts.get(ModelValues.CANDY_TYPE).intValue()<size
-                ){
+        if (getCandyCount()==0
+                ||  getCandyCount()<size){
             throw new IllegalArgumentException("negative values not allowed");
 
         }else {
-            Integer prevValue = mapOfProducts.get(ModelValues.CANDY_TYPE);
+            Integer prevValue = getCandyCount();
             mapOfProducts.put(ModelValues.CANDY_TYPE, prevValue - size);
         }
     }
@@ -101,14 +92,12 @@ public class ProductCollection {
         if (size <=0 ){
             throw new IllegalArgumentException("zero or negative values not allowed");
         }
-        if (mapOfProducts.get(ModelValues.COLA_TYPE)== null
-                || mapOfProducts.get(ModelValues.COLA_TYPE).intValue()==0
-                ||  mapOfProducts.get(ModelValues.COLA_TYPE).intValue()<size
-                ){
+        if (getColaCount()==0
+                || getColaCount()<size ){
             throw new IllegalArgumentException("negative values not allowed");
 
         }else {
-            Integer prevValue = mapOfProducts.get(ModelValues.COLA_TYPE);
+            Integer prevValue = getColaCount();
             mapOfProducts.put(ModelValues.COLA_TYPE, prevValue - size);
         }
     }
@@ -117,15 +106,27 @@ public class ProductCollection {
         if (size <=0 ){
             throw new IllegalArgumentException("zero or negative values not allowed");
         }
-        if (mapOfProducts.get(ModelValues.CHIPS_TYPE)== null
-                || mapOfProducts.get(ModelValues.CHIPS_TYPE).intValue()==0
-                ||  mapOfProducts.get(ModelValues.CHIPS_TYPE).intValue()<size
-                ){
+        if (getChipsCount()==0
+                || getChipsCount()<size ){
             throw new IllegalArgumentException("negative values not allowed");
 
         }else {
-            Integer prevValue = mapOfProducts.get(ModelValues.CHIPS_TYPE);
+            Integer prevValue = getChipsCount();
             mapOfProducts.put(ModelValues.CHIPS_TYPE, prevValue - size);
         }
+    }
+
+    public int getChipsCount() {
+        return mapOfProducts.get(ModelValues.CHIPS_TYPE);
+    }
+    public int getCandyCount(){
+        return mapOfProducts.get(ModelValues.CANDY_TYPE);
+    }
+    public int getColaCount(){
+        return mapOfProducts.get(ModelValues.COLA_TYPE);
+    }
+
+    public void clear() {
+        init();
     }
 }

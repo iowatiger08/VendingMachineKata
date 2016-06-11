@@ -28,5 +28,5 @@ public class ModelValues {
     /* messages */
     public static final String THANKYOU = "THANK YOU";
     public static final String NOTENOUGH = "NOT ENOUGH TO PURCHASE";
-    public static final String CHANGERETURNED = "CHANG RETURNED";
+    public static final String CHANGERETURNED = "CHANGE RETURNED";
 }
