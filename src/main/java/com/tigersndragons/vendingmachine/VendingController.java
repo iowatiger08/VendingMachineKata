@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by tdillon-hansen on 6/7/16.
+ * Created by tdillon-hansen
  */
 @RestController
 @EnableAutoConfiguration

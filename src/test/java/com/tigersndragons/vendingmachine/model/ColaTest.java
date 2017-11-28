@@ -7,7 +7,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * Created by tdillon-hansen on 6/8/16.
+ * Created by tdillon-hansen
  */
 public class ColaTest {
     Cola cola;

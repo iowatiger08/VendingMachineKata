@@ -1,7 +1,7 @@
 package com.tigersndragons.vendingmachine.model;
 
 /**
- * Created by user on 6/7/16.
+ * Created by user
  */
 public class ModelValues {
     public static final long PENNY_WEIGHT = 2L;

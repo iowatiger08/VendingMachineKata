@@ -1,7 +1,7 @@
 package com.tigersndragons.vendingmachine.model;
 
 /**
- * Created by tdillon-hansen on 6/7/16.
+ * Created by tdillon-hansen
  */
 public abstract class Coin {
     public abstract String type();

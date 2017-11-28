@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by tdillon-hansen on 6/7/16.
+ * Created by tdillon-hansen
  */
 public class CoinCollection {
 

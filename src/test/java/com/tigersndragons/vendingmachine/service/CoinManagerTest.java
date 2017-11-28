@@ -11,7 +11,7 @@ import static org.hamcrest.core.IsInstanceOf.any;
 import static org.mockito.Matchers.isNull;
 
 /**
- * Created by tdillon-hansen on 6/7/16.
+ * Created by tdillon-hansen
  */
 public class CoinManagerTest {
 
@@ -98,6 +98,15 @@ public class CoinManagerTest {
         coinManager.recieve(new Nickel());
         coinManager.resetCoinCollectionBag();
         assertThat(coinManager.coinCollectionInBagValue(), is (0));
+    }
+
+    @Test
+    public void emptyClearsBagValue(){
+        coinManager.recieve(new Dime());
+        coinManager.recieve(new Quarter());
+        coinManager.recieve(new Nickel());
+        coinManager.eject();
+        assertThat(   coinManager.coinCollectionInBagValue()     , is (0));
     }
 
 }

@@ -1,7 +1,7 @@
 package com.tigersndragons.vendingmachine.model;
 
 /**
- * Created by user on 6/8/16.
+ * Created by user
  */
 public class Dime extends Coin {
     public static final String TYPE="DIME";

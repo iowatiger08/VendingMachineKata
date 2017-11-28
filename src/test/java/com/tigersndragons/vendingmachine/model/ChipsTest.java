@@ -6,7 +6,6 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.*;
 
 /**
- * Created by tdillon-hansen on 6/8/16.
  */
 public class ChipsTest {
 

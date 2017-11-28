@@ -1,7 +1,7 @@
 package com.tigersndragons.vendingmachine.model;
 
 /**
- * Created by user on 6/8/16.
+ * Created by user
  */
 public class Chips extends Product {
     private static final String TYPE="CHIPS";

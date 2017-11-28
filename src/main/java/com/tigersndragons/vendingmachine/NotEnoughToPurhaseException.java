@@ -1,7 +1,7 @@
 package com.tigersndragons.vendingmachine;
 
 /**
- * Created by tdillon-hansen on 6/8/16.
+ * Created by tdillon-hansen
  */
 public class NotEnoughToPurhaseException extends Throwable {
 }

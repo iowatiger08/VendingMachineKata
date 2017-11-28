@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * Created by user on 6/8/16.
+ * Created by user
  */
 public class ProductCollectionTest {
 

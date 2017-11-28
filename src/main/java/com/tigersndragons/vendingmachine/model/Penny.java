@@ -6,7 +6,7 @@ import com.tigersndragons.vendingmachine.model.ModelValues;
 import static com.tigersndragons.vendingmachine.model.ModelValues.PENNY_WEIGHT;
 
 /**
- * Created by tdillon-hansen on 6/8/16.
+ * Created by tdillon-hansen
  */
 public class Penny extends Coin {
 

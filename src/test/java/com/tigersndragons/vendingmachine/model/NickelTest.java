@@ -6,7 +6,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 
 /**
- * Created by tdillon-Hansen on 6/8/16.
+ * Created by tdillon-Hansen
  */
 public class NickelTest {
 

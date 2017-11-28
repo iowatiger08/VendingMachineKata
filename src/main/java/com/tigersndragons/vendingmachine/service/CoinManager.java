@@ -3,7 +3,7 @@ package com.tigersndragons.vendingmachine.service;
 import com.tigersndragons.vendingmachine.model.*;
 
 /**
- * Created by tdillon-hansen on 6/7/16.
+ * Created by tdillon-hansen 
  */
  public class CoinManager {
     //@Autowired
@@ -80,5 +80,9 @@ import com.tigersndragons.vendingmachine.model.*;
 
     public int coinCollectionInBagValue() {
         return coinCollectionInBag.value();
+    }
+
+    public void eject() {
+        clearCoinCollectionForPurchase();
     }
 }
