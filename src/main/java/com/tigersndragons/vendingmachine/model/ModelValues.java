@@ -4,29 +4,30 @@ package com.tigersndragons.vendingmachine.model;
  * Created by user
  */
 public class ModelValues {
-    public static final long PENNY_WEIGHT = 2L;
-    public static final long PENNY_SIZE = 2L;
+    public static long PENNY_WEIGHT     = 1L;
+    public static long PENNY_SIZE       = 1L;
+    public static long NICKEL_SIZE      = 5L;
+    public static long NICKEL_WEIGHT    = 5L;
 
-    public static final long QUARTER_WEIGHT = 5L;
-    public static final long QUARTER_SIZE = 5L;
+    public static long QUARTER_WEIGHT   = 25L;
+    public static long QUARTER_SIZE     = 25L;
+    public static long DIME_SIZE        = 10L;
+    public static long DIME_WEIGHT      = 10L;
 
-    public static final long NICKEL_WEIGHT = 4L;
-    public static final long NICKEL_SIZE = 4L;
+    public static String    CANDY_TYPE  = "CANDY";
+    public static int       CANDY_PRICE = 65;
 
-    public static final long DIME_WEIGHT = 1L;
-    public static final long DIME_SIZE = 1L;
+    public static String    CHIPS_TYPE  = "CHIPS";
+    public static int       CHIPS_PRICE = 50;
 
-    /*product values*/
-    public static final int CHIPS_PRICE =50;
-    public static final int COLA_PRICE=100;
-    public static final int CANDY_PRICE=65;
+    public static int       COLA_PRICE  = 100;
+    public static String    COLA_TYPE   = "COLA";
 
-    public static final String CHIPS_TYPE = "CHIPS";
-    public static final String CANDY_TYPE = "CANDY";
-    public static final String COLA_TYPE ="COLA";
+    public static String INSERT_COIN        = "INSERT COIN";
+    public static String SOLD_OUT           = "SOLD OUT";
+    public static String EXACT_CHANGE_ONLY  = "EXACT CHANGE ONLY";
 
-    /* messages */
-    public static final String THANKYOU = "THANK YOU";
-    public static final String NOTENOUGH = "NOT ENOUGH TO PURCHASE";
-    public static final String CHANGERETURNED = "CHANGE RETURNED";
+    public static String NICKEL_TYPE    = "NICKEL";
+    public static String DIME_TYPE      = "DIME";
+    public static String QUARTER_TYPE   = "QUARTER";
 }
